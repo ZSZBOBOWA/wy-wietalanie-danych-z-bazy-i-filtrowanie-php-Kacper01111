@@ -37,6 +37,7 @@ if (mysqli_num_rows($result) > 0) {
 } else {echo "Brak wyników";
 }
 mysqli_close($conn);
+
 ?>
 </body>
 </html>
