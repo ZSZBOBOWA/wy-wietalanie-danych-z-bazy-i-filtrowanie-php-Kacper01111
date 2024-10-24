@@ -37,9 +37,8 @@ if(isset($_POST['nazwisko']) && $_POST['nazwisko'] != '') {
     $nazwisko = $_POST['nazwisko'];
     $nazwisko = mysqli_real_escape_string($conn, $nazwisko);
     $sql = "SELECT * FROM uczniowie WHERE nazwisko='$nazwisko'";
-}else {$sql = "SELECT * FROM uczniowie";
-}
-
+    
+    
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     echo "<table border='1'<tr><th>Imię</th><th>Nazwisko</th><th>Wiek</th><th>Klasa</th></tr>";
@@ -50,6 +49,10 @@ if (mysqli_num_rows($result) > 0) {
 } else {echo "Brak wyników";
 }
 mysqli_close($conn);
+}else {
+    echo "Brak Nazwiska";
+}
+
 
 ?>
 </body>
