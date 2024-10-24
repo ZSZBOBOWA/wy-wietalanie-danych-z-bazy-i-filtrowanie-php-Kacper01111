@@ -12,6 +12,9 @@
     <input type="submit" value="Filtruj">
 </form>
 
+<form method="POST" action="">
+
+
 <?php
 $servername = "localhost";
 $username = "root";
