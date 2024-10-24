@@ -48,11 +48,11 @@ if (mysqli_num_rows($result) > 0) {
     echo "</table>";
 } else {echo "Brak wyników";
 }
-mysqli_close($conn);
 }else {
     echo "Brak Nazwiska";
 }
 
+mysqli_close($conn);
 
 ?>
 </body>
