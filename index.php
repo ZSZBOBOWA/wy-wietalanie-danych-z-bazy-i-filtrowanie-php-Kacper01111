@@ -29,7 +29,7 @@ if(isset($_POST['nazwisko']) && $_POST['nazwisko'] != '') {
 
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
-    echo "<table border='1'<tr><th>Imię</th><th>Nazwsiko</th><th>Wiek</th></tr>";
+    echo "<table border='1'<tr><th>Imię</th><th>Nazwisko</th><th>Wiek</th></tr>";
     while ($row = mysqli_fetch_assoc($result)){
         echo "<tr><td>".$row["imie"]."</td><td>".$row["nazwisko"]."</td><td>".$row["wiek"]."</td></tr>";
     }
