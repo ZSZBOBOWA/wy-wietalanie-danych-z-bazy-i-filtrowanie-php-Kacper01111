@@ -12,7 +12,17 @@
     <input type="submit" value="Filtruj">
 </form>
 
-<form method="POST" action="">
+<form action="dodaj_ucznia.php" method="POST">
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="nazwisko">Nazwisko:</label>
+    <input type="text" id="nazwisko" name="nazwisko" required>
+    <label for="wiek">Wiek:</label>
+    <input type="number" id="wiek" name="wiek" required>
+    <label for="klasa">Klasa:</label>
+    <input type="text" id="klasa" name="klasa" required>
+    <button type="submit">Dodaj</button>
+</form>
 
 
 <?php
