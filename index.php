@@ -13,8 +13,8 @@
 </form>
 
 <form action="dodaj_ucznia.php" method="POST">
-    <label for="name">Imię:</label>
-    <input type="text" id="name" name="name" required>
+    <label for="imie">Imię:</label>
+    <input type="text" id="imie" name="imie" required>
     <label for="nazwisko">Nazwisko:</label>
     <input type="text" id="nazwisko" name="nazwisko" required>
     <label for="wiek">Wiek:</label>
