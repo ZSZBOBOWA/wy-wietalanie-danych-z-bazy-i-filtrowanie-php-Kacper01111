@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "szkola";
+$dbname = "szkola3";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn){die("Błąd Połączenia: " . mysqli_connect_error());
 }
